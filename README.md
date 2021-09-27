@@ -20,8 +20,8 @@ Containers are isolated from one another and bundle their own software, librarie
 --------------------------------------------------
 
 ## Docker Architecture
-![image](https://user-images.githubusercontent.com/88186084/134984555-779db2f3-8533-4818-ba53-8209d459588b.png)
 
+![image](https://user-images.githubusercontent.com/88186084/134984555-779db2f3-8533-4818-ba53-8209d459588b.png)>
 
 -------------------------------------------
 
@@ -52,7 +52,7 @@ Containers are isolated from one another and bundle their own software, librarie
 
 -------------------------------------------------
 
-## What are microservices
+## What are Microservices
 
 Microservice architecture, or simply microservices, is a distinctive method of developing software systems that tries to focus on building single-function modules with well-defined interfaces and operations.
 
@@ -62,7 +62,7 @@ In the simplest form, they help build an application as a suite of small service
 
 --------------------------------------------------
 
-## Differences between microservices and monolith architecture
+## Differences between Microservices and Monolith architecture
 
 Monolithic architecture  is based on a single application. This system comes with various advantages; first, you can develop faster with the essential requirements. It also makes the application quicker since there is no use of APIs.  Maintaining applications becomes problematic if it is not designed well. And this is because processes are likely to be tightly coupled. Also, Monolithic puts all of the functionality into a single process monitoring becomes one hell of a task! So, scalability, availability, and reliability get tough for the same reason.
 
@@ -84,11 +84,11 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 
 -----------------------------------------------------
 
-## Docker Setup
+# Docker Setup
 
 ------------------------------------------
 
-### Step 1 - Where to download
+## Step 1 - Where to download
 
 - In order to setup docker first you need to go to https://docs.docker.com/desktop/windows/install/
 - On this page ensure that the system requirements of WSL 2 backend are highlighted as such
@@ -97,17 +97,16 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 
 --------------------------------------------------------
 
-### Step 2 - Setup wizard
+## Step 2 - Setup wizard
 
 - Once downloaded go through the setup wizard and ensure that the `WSL Windows features` is ticked
 - Unpacking files may take some time and you may be required to `restart` your PC at the end of this period
 
 ![image](https://user-images.githubusercontent.com/88186084/134958036-ca01537f-fecb-4be8-bfc8-9dfa2323d21e.png)
 
-
 ----------------------------------------------
 
-### Step 3 - Docker ID
+## Step 3 - Docker ID
 
 - Whilst the files are unpacking we can make our own account on `Docker Hub` 
 - Follow this link to the Docker Hub homepage https://hub.docker.com/
@@ -118,7 +117,7 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 
 ---------------------------------------------------
 
-### Step 4 - Checking whether Docker is installed
+## Step 4 - Checking whether Docker is installed
 
 - To check whether Docker has installed correctly open a terminal as admin
 - Use the command `docker version` and you should see the following
@@ -128,7 +127,7 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 
 ------------------------------------------------------------------------
 
-### Step 5 - Docker Desktop
+## Step 5 - Docker Desktop
 
 - Once your PC has restarted open the newly installed Docker Desktop
 - This may prompt you to download the `WSL kernel update`
@@ -137,7 +136,7 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 
 ---------------------------------------------------------------------
 
-### Step 6 - WSL Kernel update
+## Step 6 - WSL Kernel update
 
 - Follow the link provided https://docs.microsoft.com/en-us/windows/wsl/install-manual
 - On `Step 4` you will need to click the link to download the WSL kernel
@@ -150,7 +149,7 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 
 ------------------------------------------------------------------------------
 
-### Step 7 - Configuration
+## Step 7 - Configuration
 
 - Make sure you are signed in with the Docker ID we made in `Step 3` of this process
 - Go to your Docker settings and ensure that the box to `Enable integration with WSL is ticked`
@@ -159,7 +158,7 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 
 -----------------------------------------------------------------------
 
-### Step 8 - Hello World
+## Step 8 - Hello World
 
 The first image we will pull from docker is named `hello-world`. In order to do so these are the commands you should use in a terminal you have ran as admin.
 
