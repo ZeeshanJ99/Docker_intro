@@ -126,6 +126,8 @@ A Virtual Machine, on the other hand, is not based on container technology. They
 - Once your PC has restarted open the newly installed Docker Desktop
 - This may prompt you to download the `WSL kernel update`
 
+![image](https://user-images.githubusercontent.com/88186084/134960239-b016d0ed-4e5e-4080-85fc-c82b74b80688.png)
+
 ---------------------------------------------------------------------
 
 ### Step 6 - WSL Kernel update
