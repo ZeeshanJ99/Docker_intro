@@ -1,6 +1,6 @@
-# Docker_intro
+# Docker
 
-![image](https://user-images.githubusercontent.com/88186084/134955097-e61c6e95-c52e-4991-b269-e4a26b748e76.png)
+<img src = "https://user-images.githubusercontent.com/88186084/134984570-9b5ef641-e3dd-4d30-8a1d-b134831d923b.gif">
 
 ----------------------------------------
 
@@ -18,6 +18,12 @@ Containers are isolated from one another and bundle their own software, librarie
 ![image](https://user-images.githubusercontent.com/88186084/134954424-68fb10c9-eaa6-4c30-999d-f8073104a51b.png)
 
 --------------------------------------------------
+
+## Docker Architecture
+![image](https://user-images.githubusercontent.com/88186084/134984555-779db2f3-8533-4818-ba53-8209d459588b.png)
+
+
+-------------------------------------------
 
 ## Benefits of Docker
 
@@ -58,6 +64,8 @@ In the simplest form, they help build an application as a suite of small service
 
 ## Differences between microservices and monolith architecture
 
+Monolithic architecture  is based on a single application. This system comes with various advantages; first, you can develop faster with the essential requirements. It also makes the application quicker since there is no use of APIs.  Maintaining applications becomes problematic if it is not designed well. And this is because processes are likely to be tightly coupled. Also, Monolithic puts all of the functionality into a single process monitoring becomes one hell of a task! So, scalability, availability, and reliability get tough for the same reason.
+
 While a monolithic application is a single unified unit, a microservices architecture breaks it down into a collection of smaller independent units. These units carry out every application process as a separate service. So all the services have their own logic and the database as well as perform the specific functions
 
 ![image](https://user-images.githubusercontent.com/88186084/134954176-43a99b4c-d092-4370-a784-46fbd2ec44d9.png)
@@ -68,8 +76,7 @@ While a monolithic application is a single unified unit, a microservices archite
 
 Docker is container based technology and containers are just user space of the operating system. At the low level, a container is just a set of processes that are isolated from the rest of the system, running from a distinct image that provides all files necessary to support the processes. It is built for running applications. In Docker, the containers running share the host OS kernel.
 
-![image](https://user-images.githubusercontent.com/88186084/134956742-3aded7d8-119f-4fc5-885c-fe6d3da497b0.png)
-
+<img src = "https://user-images.githubusercontent.com/88186084/134983025-9d44573c-8d3f-40f6-a363-a1ac605768db.gif">
 
 A Virtual Machine, on the other hand, is not based on container technology. They are made up of user space plus kernel space of an operating system. Under VMs, server hardware is virtualized. Each VM has Operating system (OS) & apps. It shares hardware resource from the host.
 
