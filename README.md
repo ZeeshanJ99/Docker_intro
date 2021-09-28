@@ -291,8 +291,48 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 
 - `nano index.html`
 - Make a change
+- Search `localhost` and you will be able to make a change
+
+-------------------------------------------------------
+
+## SRE Customised nginx task
+
+### Copying files to container
+
+`docker cp <file to copy> <container_id>:path/to/file`
+
+### Commit to save changes to image and then push to dockerhub
+
+      docker commit <container_id> zeeshanj/repo_name
+      docker push zeeshanj/repo_name
+
+Note: The repository name and local folder name must match
+
+-----------------------------------------------------------
+
+## Building a docker image
+
+- In the folder where you saved `index.html` in your localhost, create a file named `Dockerfile`. Within this you will need this code:
+
+            # build image from official image of nginx
+            FROM nginx
+
+            # Label used as reference, maintainer to add info for who built image - optional
+            LABEL MAINTAINER=zeeshanj@abc.com
+
+            # copy customised index.html file
+            COPY index.html /usr/share/nginx/html
+
+            # expose port 80 to launch in browser
+            EXPOSE 80
+
+            # CMD will run this command once all other instructions have been successfully                  completed
+            CMD ["nginx", "-g", "daemon off;"]
 
 
-
+- To build the image run this command
+- `docker build -t zeeshanj/sre_nginx_test:v2 .`
+- To check whether this has been created use `docker images`
+- Commit and push
 
 
