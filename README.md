@@ -270,8 +270,10 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 
 ---------------------------------------------------------------------
 
+## Run Dockerhub on localhost
 
-
+- On the Terminal run this command `docker run -d -p 4000:4000 docs/docker.github.io`
+- Then once downloaded run `localhost:4000` on a browser and you should be in dockerhub
 
 
 
