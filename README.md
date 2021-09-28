@@ -261,12 +261,10 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 
 ### Naming conventions for images
 
-- Image name needs to start with your account ID
-- `zeeshanj/name-of-image`
+- Image name needs to start with your account ID e.g. `zeeshanj/name-of-image`
 
-- lets create an example of a new image with correct naming conventions
-- `zeeshanj/sre_docker_app:v1`
-- the `v1` tag specifies the `version` of the image, if no tag is included the version shall be known as `latest`
+Let's now create an example of a new image with correct naming conventions `zeeshanj/sre_docker_app:v1`
+- The `v1` tag specifies the `version` of the image, if no tag is included the version shall be known as `latest`
 
 ---------------------------------------------------------------------
 
@@ -279,19 +277,27 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 
 ## Let's move on to Nginx
 
-- `docker run -d -p 80:80 nginx`
-- `localhost`
+- `docker run -d -p 80:80 nginx` - runs the nginx image
  
-- `docker ps`
-- `docker exec -it containerid sh`
+- `docker ps` - shows the containers `-a` shows the containers which arent running
 
-- `apt-get install nano`
+- `alias docker="winpty docker"` - If it is a new terminal you may need to change the alias again
 
-- cd /usr/share/nginx/html
+- `docker exec -it containerid sh` - allows you to shell into the container
 
-- `nano index.html`
-- Make a change
-- Search `localhost` and you will be able to make a change
+- `apt-get update` - gets updates
+
+- `apt-get install nano` - installs nano
+
+- `cd /usr/share/nginx/html` - cd's into the folder where `index.html` will be located
+
+- `nano index.html` and make a change in the file
+
+![image](https://user-images.githubusercontent.com/88186084/135134234-57316850-1b55-4937-a7fa-d8a6538cf926.png)
+
+- Search `localhost` on your browser and you will be able to see any changes made
+
+![image](https://user-images.githubusercontent.com/88186084/135134295-653d8614-2e02-477e-90ef-df07bd074b3e.png)
 
 -------------------------------------------------------
 
