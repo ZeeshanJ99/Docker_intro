@@ -180,22 +180,41 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 - `docker pull name_of_image` - pulling an image
 - `docker run name_of_image` - running an image
 - `docker build -t zeeshanj/sre_docker_app:v1` - building an image
+-  `docker commit name_of_image:v1` - commit changes
 - `docker push name_of_image` - pushing an image to dockerhub repo
 - `docker rmi name_of_image:v1 -f` - removing an image
 
+---------------------------------------------------------------
 
-- Lets see an example of an image that is already available on Dockerhub/registry
+### Lets see an example of an image that is already available on Dockerhub/registry
+
 - Image called `ghost`
 - `-d` detatched
 - `-p` - the port its run on
 - `docker run -d -p 2368:2368 ghost`
 
-- `docker ps` or `docker ps -a` Checking container state
+- `docker ps` or `docker ps -a` - Checking container state
 - go to `localhost:2368` to see the webpage
+
+
+- stop - start - remove containers
+- `docker stop containerid` - stop
+- `docker start containerid` - start
+- `docker rm e9d6a080b10e` - remove
+- Get the `container id` through using `docker ps -a`
+- Difference between `stop` and `remove` is that stopped state still holds the same data available whereas remove deletes it completely
+
+--------------------------------------
+
+### Interact with running Container
+
+- Firstly, change the alias `alias docker="winpty docker"`
+- Then use this command to shell in `docker exec -it containerid sh`
+
 
 -------------------------------------------------
 
-Here are some more docker commands that may be useful:
+## Here are some more docker commands that may be useful:
 
       attach      Attach local standard input, output, and error streams to a running container
       build       Build an image from a Dockerfile
