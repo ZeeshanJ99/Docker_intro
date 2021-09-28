@@ -275,6 +275,23 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 - On the Terminal run this command `docker run -d -p 4000:4000 docs/docker.github.io`
 - Then once downloaded run `localhost:4000` on a browser and you should be in dockerhub
 
+----------------------------------------------------------
+
+## Let's move on to Nginx
+
+- `docker run -d -p 80:80 nginx`
+- `localhost`
+ 
+- `docker ps`
+- `docker exec -it containerid sh`
+
+- `apt-get install nano`
+
+- cd /usr/share/nginx/html
+
+- `nano index.html`
+- Make a change
+
 
 
 
