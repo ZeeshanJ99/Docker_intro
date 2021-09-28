@@ -339,17 +339,34 @@ Note: The repository name and local folder name must match
 
 ### Lets create a Micro-service for our Node-app with Docker
 
-- we will build an image for the app
-- select the correct image for node `node`
-- `LABEL`
-- `COPY` dependencies from localhost to container `app /default location`
-- Copy package.json files
-- `RUN npm install`
-- `RUN npm install express` - may have to run this
-- `RUN seeds/seeds.js` 
-- `EXPOSE 3000`
-- `CMD ["node", "app.js"]
+- We will build an image for the app through creating a `Dockerfile` in the folder where our app is located
+- paste this code into the `Dockerfile`:
+
+      FROM node
+
+      WORKDIR /usr/src/app
+
+      COPY package*.json ./
+
+      RUN npm install -g npm@latest
+      RUN npm install express
+
+      # RUN seeds/seed.js
+
+      COPY . .
+
+      EXPOSE 3000
+
+      CMD ["node", "app.js"]
 
 
+Commit: `docker commit a39a7d6183c5 zeeshanj/sre_node_app`
+Push: `docker push a39a7d6183c5 zeeshanj/sre_node_app`
+
+-----------------------------------------------------
+
+## Delete all Containers command
+
+`docker rm -f $(docker ps -a -q)`
 
 
