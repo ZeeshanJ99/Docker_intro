@@ -335,4 +335,21 @@ Note: The repository name and local folder name must match
 - To check whether this has been created use `docker images`
 - Commit and push
 
+-----------------------------------------------------------------
+
+### Lets create a Micro-service for our Node-app with Docker
+
+- we will build an image for the app
+- select the correct image for node `node`
+- `LABEL`
+- `COPY` dependencies from localhost to container `app /default location`
+- Copy package.json files
+- `RUN npm install`
+- `RUN npm install express` - may have to run this
+- `RUN seeds/seeds.js` 
+- `EXPOSE 3000`
+- `CMD ["node", "app.js"]
+
+
+
 
