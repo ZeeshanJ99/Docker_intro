@@ -326,7 +326,7 @@ Note: The repository name and local folder name must match
             # expose port 80 to launch in browser
             EXPOSE 80
 
-            # CMD will run this command once all other instructions have been successfully                  completed
+            # CMD will run this command once all other instructions have been completed
             CMD ["nginx", "-g", "daemon off;"]
 
 
