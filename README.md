@@ -361,6 +361,7 @@ Note: The repository name and local folder name must match
 
 
 Commit: `docker commit a39a7d6183c5 zeeshanj/sre_node_app`
+
 Push: `docker push a39a7d6183c5 zeeshanj/sre_node_app`
 
 -----------------------------------------------------
