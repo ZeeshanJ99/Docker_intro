@@ -177,13 +177,22 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 ---------------------------------------------
 
 ## Docker Commands
-- `docker pull name_of_image`
-- `docker run name_of_image`
-- `docker build -t zeeshanj/sre_docker_app:v1`
-- `docker push name_of_image`
+- `docker pull name_of_image` - pulling an image
+- `docker run name_of_image` - running an image
+- `docker build -t zeeshanj/sre_docker_app:v1` - building an image
+- `docker push name_of_image` - pushing an image to dockerhub repo
 - `docker rmi name_of_image:v1 -f` - removing an image
 
-Here are some more commands that may be useful:
+
+- Lets see an example of an image that is already available on Dockerhub/registry
+- Image called `ghost`
+- `-d` detatched
+- `-p` - the port its run on
+- `docker run -d -p 2368:2368 ghost`
+
+-------------------------------------------------
+
+Here are some more docker commands that may be useful:
 
       attach      Attach local standard input, output, and error streams to a running container
       build       Build an image from a Dockerfile
@@ -237,7 +246,7 @@ Here are some more commands that may be useful:
 - `zeeshanj/sre_docker_app:v1`
 - the `v1` tag specifies the `version` of the image, if no tag is included the version shall be known as `latest`
 
-
+---------------------------------------------------------------------
 
 
 
