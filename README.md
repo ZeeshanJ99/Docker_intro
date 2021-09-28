@@ -340,7 +340,7 @@ Note: The repository name and local folder name must match
 ### Lets create a Micro-service for our Node-app with Docker
 
 - We will build an image for the app through creating a `Dockerfile` in the folder where our app is located
-- paste this code into the `Dockerfile`:
+- Paste this code into the `Dockerfile`:
 
       FROM node
 
@@ -360,9 +360,16 @@ Note: The repository name and local folder name must match
       CMD ["node", "app.js"]
 
 
-Commit: `docker commit a39a7d6183c5 zeeshanj/sre_node_app`
+- Run: `docker run -d -p 80:3000 zeeshanj/sre_node_app:v1`
 
-Push: `docker push a39a7d6183c5 zeeshanj/sre_node_app`
+- Commit: `docker commit a39a7d6183c5 zeeshanj/sre_node_app`
+
+- Push: `docker push a39a7d6183c5 zeeshanj/sre_node_app`
+
+After running you should be able to search `localhost` on your browser and see the app homepage as such
+
+![image](https://user-images.githubusercontent.com/88186084/135132673-a3aec60f-ce06-471b-a517-941be15b53ac.png)
+
 
 -----------------------------------------------------
 
