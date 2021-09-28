@@ -190,6 +190,9 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 - `-p` - the port its run on
 - `docker run -d -p 2368:2368 ghost`
 
+- `docker ps` or `docker ps -a` Checking container state
+- go to `localhost:2368` to see the webpage
+
 -------------------------------------------------
 
 Here are some more docker commands that may be useful:
