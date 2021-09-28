@@ -173,3 +173,31 @@ The first image we will pull from docker is named `hello-world`. In order to do 
 - Using the command `docker run hello-world` will run the specified image. In this case we are running the image named `hello world`
 
 ![image](https://user-images.githubusercontent.com/88186084/134960054-c7c7eb0d-6b25-4236-a9de-159ac30bc35e.png)
+
+---------------------------------------------
+
+## Docker Commands
+- `docker pull name_of_image`
+- `docker run name_of_image`
+- `docker push name_of_image`
+
+---------------------------------------------------------------------
+
+### Naming conventions for images
+
+- Image name needs to start with your account ID
+- `zeeshanj/name-of-image`
+
+- lets create an example of a new image with correct naming conventions
+- `zeeshanj/sre_docker_app:v1`
+- the `v1` tag specifies the `version` of the image, if no tag is included the version shall be known as `latest`
+
+
+
+
+
+
+
+
+
+
